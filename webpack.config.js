@@ -145,7 +145,7 @@ module.exports = () => {
                     : 'css/[id].css',
             }),
             new HtmlWebpackPlugin({
-                favicon: getPath('app/favicon.ico'),
+                favicon: getPath('app/jips_logo.ico'),
                 template: getPath('app/index.html'),
                 filename: 'index.html',
                 title: pkg.name,
@@ -168,7 +168,7 @@ module.exports = () => {
                 scope: '/',
                 icons: [
                     {
-                        src: getPath('app/favicon.png'),
+                        src: getPath('app/jips_logo.png'),
                         sizes: [96, 128, 192, 256, 384, 512],
                         destination: 'icons',
                     },
