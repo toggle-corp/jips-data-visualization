@@ -25,11 +25,11 @@ const login = wrap({
 });
 const home = wrap({
     path: '/',
-    title: 'Home',
+    title: 'Jips',
     navbarVisibility: true,
     component: lazy(() => import('#views/Template')),
     componentProps: {
-        name: 'Home Page',
+        name: 'Jips',
     },
     visibility: 'is-authenticated',
 });

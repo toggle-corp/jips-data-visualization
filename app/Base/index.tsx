@@ -16,7 +16,6 @@ import { UserContext, UserContextInterface } from '#base/context/UserContext';
 import { NavbarContext, NavbarContextInterface } from '#base/context/NavbarContext';
 import AuthPopup from '#base/components/AuthPopup';
 import { sync } from '#base/hooks/useAuthSync';
-import Navbar from '#base/components/Navbar';
 import Routes from '#base/components/Routes';
 import { User } from '#base/types/user';
 import apolloConfig from '#base/configs/apollo';
@@ -175,12 +174,12 @@ function Base() {
                                     <Init
                                         className={styles.init}
                                     >
-                                        <Navbar
+                                        {/* <Navbar
                                             className={_cs(
                                                 styles.navbar,
                                                 !navbarVisibility && styles.hidden,
                                             )}
-                                        />
+                                        /> */}
                                         <Routes
                                             className={styles.view}
                                         />
